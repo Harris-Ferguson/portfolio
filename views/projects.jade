@@ -1,0 +1,10 @@
+extends layout 
+
+mixin project(Name, Description, Link)
+    h1= Name
+    p= Description
+    href= link
+
+block content
+    each project in projects
+        +project(project.name, project.description, project.link)
