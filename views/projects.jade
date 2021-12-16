@@ -1,10 +1,12 @@
 extends layout 
 
-mixin project(Name, Description, Link)
+mixin project(Name, Description, CodeLink, LiveLink)
     h1= Name
     p= Description
-    href= link
+    a(href=CodeLink)= "Code Link"
+    if(LiveLink)
+        a(href=LiveLink)= "See it in Action!"
 
 block content
     each project in projects
-        +project(project.name, project.description, project.link)
+        +project(project.name, project.description, project.codelink, project.livelink)

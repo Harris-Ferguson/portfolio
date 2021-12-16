@@ -2,11 +2,11 @@
   {
   "name": "first", 
   "description": "this is the project description", 
-  "link": "http://localhost:8080/"
+  "codelink": "http://localhost:8080/"
   },
   {
     "name": "second", 
     "description": "this is the project description for the other project", 
-    "link": "http://localhost:8080/"
+    "codelink": "http://localhost:8080/"
   }
 ]
