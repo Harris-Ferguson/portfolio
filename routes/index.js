@@ -18,4 +18,8 @@ router.get('/about', function(req, res, next) {
   });
 });
 
+router.get('/canvas', function(req, res, next) {
+  res.sendFile('./canvas.js');
+});
+
 module.exports = router;
