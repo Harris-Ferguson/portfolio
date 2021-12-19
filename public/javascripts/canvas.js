@@ -6,17 +6,18 @@ let height = canvas.width;
 
 var simplex = new SimplexNoise();
 let points = [];
-let point_max = 1200;
+let point_max = 1500;
 // z offset and incrementfor the noise sampling
 let zoff = 0;
 let zincrement = 0.00001;
-// how much we want to step for the next iteration of noise sampling
-let step = 8;
+// how much we want to step each iteration. Roughly indicates line speed
+let step = 2.5;
 // Noise angle constant
-let angle = Math.PI * 4;
+let angle = Math.PI * 2;
 // base line values
-let base = 1000;
-let factor = 1.75;
+let base = 2000;
+let factor = 2;
+let strokeWidth = 10;
 
 class Point {
   constructor(x, y){
@@ -55,9 +56,10 @@ function draw(){
     let point_noise = angle * noise(point.x / base * factor, point.y / base * factor, zoff);
     point.x += Math.cos(point_noise) * step;
     point.y += Math.sin(point_noise) * step;
-    point.h = circle_map_restricted(270, 310);
+    // point.h = circle_map_restricted(270, 310);
     // draw it
     ctx.beginPath();
+    ctx.lineWidth = strokeWidth;
     ctx.strokeStyle = colorstring(point);
     ctx.moveTo(point.pastX, point.pastY);
     ctx.lineTo(point.x, point.y);
@@ -65,8 +67,7 @@ function draw(){
     if(point.x > width || point.x < 0 || point.y > height || point.y < 0){
       randomize_point(point);
     }
-    point.a -= 0.01;
-    point.l += 0.01;
+    point.h += 0.001;
   }
   zoff += zincrement;
 
@@ -90,7 +91,7 @@ function modulus_phase(x, y){
 function randomize_point(point){
   point.x = point.pastX = width * Math.random();
   point.y = point.pastY = height * Math.random();
-  point.h = circle_map(point.x, point.y);
+  point.h = circle_map_restricted(180, 270);
   point.s = 1;
   point.l = 0.5;
   point.a = 1;
@@ -98,7 +99,7 @@ function randomize_point(point){
 }
 
 function noise(x, y, z){
-  var octaves = 8;
+  var octaves = 4;
   var decay = 0.5;
   var amp = 1;
   var freq = 1;
