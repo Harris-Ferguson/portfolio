@@ -5,7 +5,7 @@ var path = require('path');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Harris Ferguson' });
 });
 
 router.get('/about', function(req, res, next) {
@@ -16,6 +16,10 @@ router.get('/about', function(req, res, next) {
     }
     res.render('about', {about: data, img: '/images/pfp.jpg'});
   });
+});
+
+router.get('/canvas', function(req, res, next) {
+  res.sendFile('./canvas.js');
 });
 
 module.exports = router;
