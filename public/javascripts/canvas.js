@@ -1,16 +1,19 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
+let width = canvas.height;
+let height = canvas.width;
+
 var simplex = new SimplexNoise();
 let points = [];
-let point_max = 600;
+let point_max = 1200;
 // z offset and incrementfor the noise sampling
 let zoff = 0;
-let zincrement = 0.004;
+let zincrement = 0.00001;
 // how much we want to step for the next iteration of noise sampling
-let step = 5;
+let step = 8;
 // Noise angle constant
-let angle = Math.PI * 6;
+let angle = Math.PI * 4;
 // base line values
 let base = 1000;
 let factor = 1.75;
@@ -29,10 +32,18 @@ class Point {
 }
 
 function init(){
+  window.addEventListener('resize', onWindowResize, false);
+  onWindowResize();
   for(let i = 0 ; i < point_max ; i++){
     points[i] = randomize_point(new Point(0,0));
   }
+  simplex = new SimplexNoise();
   window.requestAnimationFrame(draw);
+}
+
+function onWindowResize(e){
+  width = canvas.width = window.innerWidth;
+  height = canvas.height = window.innerHeight;
 }
 
 function draw(){
@@ -44,22 +55,42 @@ function draw(){
     let point_noise = angle * noise(point.x / base * factor, point.y / base * factor, zoff);
     point.x += Math.cos(point_noise) * step;
     point.y += Math.sin(point_noise) * step;
+    point.h = circle_map_restricted(270, 310);
     // draw it
     ctx.beginPath();
     ctx.strokeStyle = colorstring(point);
     ctx.moveTo(point.pastX, point.pastY);
     ctx.lineTo(point.x, point.y);
     ctx.stroke();
+    if(point.x > width || point.x < 0 || point.y > height || point.y < 0){
+      randomize_point(point);
+    }
+    point.a -= 0.01;
+    point.l += 0.01;
   }
   zoff += zincrement;
 
   window.requestAnimationFrame(draw)
 }
 
+// maps a point on the plane that is the canvas to a degree angle around a circle
+function circle_map(x, y){
+  return Math.atan2(x - width / 2, y - height / 2) * 180 / Math.PI;
+}
+
+function circle_map_restricted(min, max){
+  return Math.random() * (max - min) + min;
+}
+
+function modulus_phase(x, y){
+  let z = (Math.sqrt(x, y));
+  return (z+1) / (z^4) + z - 100;
+}
+
 function randomize_point(point){
-  point.x = point.pastX = canvas.width * Math.random();
-  point.y = point.pastY = canvas.height * Math.random();
-  point.h = Math.atan2(point.x, point.y) * 180 / Math.PI;
+  point.x = point.pastX = width * Math.random();
+  point.y = point.pastY = height * Math.random();
+  point.h = circle_map(point.x, point.y);
   point.s = 1;
   point.l = 0.5;
   point.a = 1;
@@ -67,7 +98,7 @@ function randomize_point(point){
 }
 
 function noise(x, y, z){
-  var octaves = 16;
+  var octaves = 8;
   var decay = 0.5;
   var amp = 1;
   var freq = 1;
