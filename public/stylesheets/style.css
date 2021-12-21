@@ -40,10 +40,11 @@ Navbar
   width: 100%;
   align-items: center;
   justify-content: center;
+  background-color: #7395ae;
 }
 
 .navbar > .navelements > .element:hover {
-  background-color: darkblue;
+  filter: brightness(85%);
 }
 
 ul {
@@ -93,12 +94,36 @@ project page
   border: #557a95 solid;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 0 5em -1em darkgray;
+  text-align: center;
+}
+
+.project > .link {
+  margin: 2px;
+  border-width: 2px;
+  border: #557a95 solid;
+  border-radius: 20px;
+  background-color: #557a95;
+}
+
+.project > .link:hover {
+  filter: brightness(85%);
+}
+
+.project > .link > a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image {
   background-size: 500px;
   border-width: 2px;
-  box-shadow: 0 0 5em -1em darkgray;
   height: 200px;
   width: 400px;
 }

@@ -5,9 +5,11 @@ mixin project(Name, Description, CodeLink, LiveLink, img)
         .image(style='background-image: url(#{img})')
         h1= Name
         p= Description
-        a(href=CodeLink)= "Github"
+        .link
+            a(href=CodeLink)= "Github"
         if(LiveLink)
-            a(href=LiveLink)= "See it in Action!"
+            .link 
+                a(href=LiveLink)= "See it in Action!"
 
 block content
     .projects
