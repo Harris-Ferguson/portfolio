@@ -1,17 +1,22 @@
 extends layout 
 
-mixin project(Name, Description, CodeLink, LiveLink, img)
+mixin project(Name, Description, CodeLink, LiveLink, img, tags)
     .project
         .image(style='background-image: url(#{img})')
         h1= Name
         p= Description
+        .tags
+            each tag, index in tags ? tags : []
+                .tag
+                    p= tag[index]
         .link
             a(href=CodeLink)= "Github"
         if(LiveLink)
             .link 
                 a(href=LiveLink)= "See it in Action!"
 
+
 block content
     .projects
         each project in projects
-            +project(project.name, project.description, project.codelink, project.livelink, project.img)
+            +project(project.name, project.description, project.codelink, project.livelink, project.img, project.tags)

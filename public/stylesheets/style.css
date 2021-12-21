@@ -100,6 +100,7 @@ project page
   overflow: hidden;
   box-shadow: 0 0 5em -1em darkgray;
   text-align: center;
+  width: 26em;
 }
 
 .project > .link {
@@ -112,6 +113,7 @@ project page
 
 .project > .link:hover {
   background-color: darkgray;
+  border: darkgray solid;
 }
 
 .project > .link > a {
@@ -130,11 +132,32 @@ project page
   background-repeat: no-repeat;
   border-width: 2px;
   height: 200px;
-  width: 400px;
+  width: 100%;
 }
 
 .content > .image > img{
   object-fit: cover;
   min-width: 100%;
   min-height: 100%;
+}
+
+.project > .tags{
+  display: flex;
+}
+
+.project > .tags > .tag {
+  margin: 10px;
+  background-color: darkgray;
+  border-radius: 10px;
+}
+
+.project > .tags > .tag {
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: darkgray;
+  border-radius: 10px;
+}
+
+.project > .tags > .tag > p {
+  margin: 3px;
 }
