@@ -1,5 +1,6 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
 }
 
 .navbar {
@@ -12,6 +13,8 @@ body {
 
 .navbar > .navelements {
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
 }
 
@@ -20,6 +23,10 @@ body {
   font-size: 20px;
   height: 100%;
   width: 120px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .navbar > .navelements > .element > a {
