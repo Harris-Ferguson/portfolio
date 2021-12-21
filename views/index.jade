@@ -1,8 +1,14 @@
-extends layout
-
-block content
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
   include noisecanvas
-  .info
-    .text
-      h1= title
-      p #{content}
+    .info
+      .text
+        h1= title
+        p #{content}
+        p Take a look at my 
+          a(href='/projects')= 'Projects'
+        p Learn more 
+          a(href='/about')= 'about me'
