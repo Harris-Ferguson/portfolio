@@ -2,7 +2,7 @@
   {
   "name": "first", 
   "description": "this is the project description", 
-  "codelink": "http://localhost:8080/",
+  "codelink": "https://github.com/Harris-Ferguson/saskcycle",
   "livelink": "https://saskcycle.herokuapp.com/",
   "img": "/images/saskcycle.png"
   },

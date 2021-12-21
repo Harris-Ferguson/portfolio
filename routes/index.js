@@ -5,7 +5,13 @@ var path = require('path');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Harris Ferguson' });
+  fs.readFile(path.join(__dirname, '../public/text/index.txt'), (err, data) =>{
+    if(err){
+      console.log(err);
+      return;
+    }
+    res.render('index', { title: 'Hi 👋, I\'m Harris', content:  data});
+  })
 });
 
 router.get('/about', function(req, res, next) {
