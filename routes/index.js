@@ -20,7 +20,7 @@ router.get('/about', function(req, res, next) {
       console.log(err);
       return;
     }
-    res.render('about', {about: data, img: '/images/pfp.jpg'});
+    res.render('about', {about: data, img: '/images/headshot.jpg'});
   });
 });
 

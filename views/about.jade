@@ -1,5 +1,19 @@
 extends layout 
 
 block content 
-  img(src=img)
-  p= about
+  .about 
+    .image(style='background-image: url(#{img})')
+    .about
+      .intro
+        p
+          | I'm Harris Ferguson. I'm currently studying Computer Science at the University of Saskatchewan. 
+          | I'm an aspiring Software Developer whos passionate about learning everything I can about Software Engineering. 
+      .amble 
+        p 
+          | I'm comfortable in Java, C, Python, and JavaScript.
+        p 
+          | Over the course of my degree ive become passionate about User Centered Design, Cloud Computing, 
+          | Networking, Operating Systems and Web Development. I also have a deep love for Mathematics. 
+      .links 
+        a(href="https://www.linkedin.com/in/harris-ferguson/")= "LinkedIn"
+        a(href="https://github.com/Harris-Ferguson")= "GitHub"

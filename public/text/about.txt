@@ -1,1 +1,5 @@
-This is a paragraph about me :) 
+Hi, I'm Harris Ferguson. I'm currently studying Computer Science at the University of Saskatchewan. 
+I'm an aspiring software developer whos passionate about learning all I can about the field. 
+
+I was
+intoduced to software development at Road Coffee, where I was part of a teamt that launched 
