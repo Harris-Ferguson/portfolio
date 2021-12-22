@@ -10,8 +10,6 @@ router.get('/', function(req, res, next) {
       return;
     }
     var projects = JSON.parse(data.toString());
-    console.log(projects);
-    console.log(projects[0].tags);
     res.render('projects', { projects: projects });
   })
 });

@@ -8,8 +8,35 @@
     "tags": ["Java Spring", "Google Maps API", "MongoDB"]
   },
   {
-    "name": "second", 
-    "description": "this is the project description for the other project", 
-    "codelink": "http://localhost:8080/"
+    "name": "Due Date Bot", 
+    "description": "A due date tracking bot built for a study group discord server. Tracks assignments and due dates, and sends timed alerts before due dates.", 
+    "codelink": "https://github.com/Harris-Ferguson/duedatebot", 
+
+    "img": "/images/duedate.png",
+    "tags": ["Python", "discord.py", "MongoDB"]
+  },
+  {
+    "name": "Portfolio Website", 
+    "description": "This very website!", 
+    "codelink": "https://github.com/Harris-Ferguson/portfolio", 
+    "livelink": "/",
+    "img": "/images/cargame.png",
+    "tags": ["JavaScript", "Jade", "NodeJS", "CSS"]
+  },
+  {
+    "name": "Road Coffee", 
+    "description": "The Shopify based website for Road Coffee. Worked on styling, SEO, Performance Optimization, and a custom video loader for the blog.", 
+
+    "livelink": "https://roadcoffeeco.com/",
+    "img": "/images/roadcoffee.png",
+    "tags": ["JavaScript", "Liquid (HTML Templating Language)", "CSS"]
+  },
+  {
+    "name": "Car Game", 
+    "description": "A simple frogger style game built as practice for a game jam", 
+    "codelink": "https://github.com/Harris-Ferguson/Cars", 
+    "livelink": "/cargame",
+    "img": "/images/cargame.png",
+    "tags": ["C#", "Unity"]
   }
 ]

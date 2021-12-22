@@ -28,4 +28,8 @@ router.get('/canvas', function(req, res, next) {
   res.sendFile('./canvas.js');
 });
 
+router.get('/cargame', function(req, res, next) {
+  res.sendFile('/cargame/index.html');
+})
+
 module.exports = router;
