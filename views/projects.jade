@@ -10,10 +10,10 @@ mixin project(Name, Description, CodeLink, LiveLink, img, tags)
                 .tag
                     p= tag[index]
         .link
-            a(href=CodeLink)= "Github"
+            | <a href="#{CodeLink}" target="_blank" rel="noopener noreferrer">Project GitHub</a>
         if(LiveLink)
             .link 
-                a(href=LiveLink)= "See it in Action!"
+                |  <a href="#{LiveLink}" target="_blank" rel="noopener noreferrer">See it in Action!</a>
 
 
 block content
