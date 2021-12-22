@@ -20,7 +20,7 @@
     "description": "This very website!", 
     "codelink": "https://github.com/Harris-Ferguson/portfolio", 
     "livelink": "/",
-    "img": "/images/cargame.png",
+    "img": "/images/portfolio.png",
     "tags": ["JavaScript", "Jade", "NodeJS", "CSS"]
   },
   {
@@ -29,7 +29,7 @@
 
     "livelink": "https://roadcoffeeco.com/",
     "img": "/images/roadcoffee.png",
-    "tags": ["JavaScript", "Liquid (HTML Templating Language)", "CSS"]
+    "tags": ["JavaScript", "Liquid", "CSS"]
   },
   {
     "name": "Car Game", 

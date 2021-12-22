@@ -167,13 +167,24 @@ project page
   border-radius: 10px;
 }
 
-.project > .tags > .tag {
+.project > .content > .tags > .tag {
   margin-left: 5px;
   margin-right: 5px;
   background-color: darkgray;
   border-radius: 10px;
+  height: 50px;
+  width: 70px;
+  font-size: small;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
-.project > .tags > .tag > p {
+.project > .content > .tags > .tag > p {
   margin: 3px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
+
