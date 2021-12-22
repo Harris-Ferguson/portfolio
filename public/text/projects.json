@@ -8,12 +8,12 @@
     "tags": ["Java Spring", "JavaScript", "MongoDB"]
   },
   {
-    "name": "Due Date Bot", 
-    "description": "A due date tracking bot built for a study group discord server. Tracks assignments and due dates, and sends timed alerts before due dates.", 
-    "codelink": "https://github.com/Harris-Ferguson/duedatebot", 
+    "name": "Road Coffee", 
+    "description": "The Shopify based website for Road Coffee. Worked on styling, SEO, Performance Optimization, and a custom video loader for the blog.", 
 
-    "img": "/images/duedate.png",
-    "tags": ["Python", "MongoDB"]
+    "livelink": "https://roadcoffeeco.com/",
+    "img": "/images/roadcoffee.png",
+    "tags": ["JavaScript", "Liquid", "CSS"]
   },
   {
     "name": "Portfolio Website", 
@@ -24,12 +24,20 @@
     "tags": ["JavaScript", "Jade", "NodeJS", "CSS"]
   },
   {
-    "name": "Road Coffee", 
-    "description": "The Shopify based website for Road Coffee. Worked on styling, SEO, Performance Optimization, and a custom video loader for the blog.", 
+    "name": "Battlesnake 2020", 
+    "description": "A Snake playing AI built for Battlesnake Saskatchewan 2020. Built as a web server that implements the BattleSnake API. Our team placed 6th!", 
+    "codelink": "https://github.com/Harris-Ferguson/zmija", 
 
-    "livelink": "https://roadcoffeeco.com/",
-    "img": "/images/roadcoffee.png",
-    "tags": ["JavaScript", "Liquid", "CSS"]
+    "img": "/images/zmija.png",
+    "tags": ["Python", "CherryPy"]
+  },
+  {
+    "name": "Due Date Bot", 
+    "description": "A due date tracking bot built for a study group discord server. Tracks assignments and due dates, and sends timed alerts before due dates.", 
+    "codelink": "https://github.com/Harris-Ferguson/duedatebot", 
+
+    "img": "/images/duedate.png",
+    "tags": ["Python", "MongoDB"]
   },
   {
     "name": "Car Game", 
