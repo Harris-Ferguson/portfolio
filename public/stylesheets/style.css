@@ -101,9 +101,22 @@ project page
   box-shadow: 0 0 5em -1em darkgray;
   text-align: center;
   width: 26em;
+  height: 32em;
+  position: relative;
 }
 
-.project > .link {
+.content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.project > .content > .links {
+  bottom: 0;
+  width: 100%;
+}
+
+.project > .content > .links > .link {
   margin: 2px;
   border-width: 2px;
   border: black solid;
@@ -111,12 +124,12 @@ project page
   background-color: black;
 }
 
-.project > .link:hover {
+.project > .content> .links > .link:hover {
   background-color: darkgray;
   border: darkgray solid;
 }
 
-.project > .link > a {
+.project > .content > .links > .link > a {
   text-decoration: none;
   color: white;
   font-size: large;
@@ -141,11 +154,14 @@ project page
   min-height: 100%;
 }
 
-.project > .tags{
+.project > .content > .tags{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-.project > .tags > .tag {
+.project > .content > .tags > .tag {
   margin: 10px;
   background-color: darkgray;
   border-radius: 10px;

@@ -5,16 +5,18 @@ mixin project(Name, Description, CodeLink, LiveLink, img, tags)
         .image(style='background-image: url(#{img})')
         h1= Name
         p= Description
-        .tags
-            each tag, index in tags ? tags : []
-                .tag
-                    p= tag[index]
-        if(CodeLink)
-            .link
-                | <a href="#{CodeLink}" target="_blank" rel="noopener noreferrer">Project GitHub</a>
-        if(LiveLink)
-            .link 
-                |  <a href="#{LiveLink}" target="_blank" rel="noopener noreferrer">See it in Action!</a>
+        .content 
+            .tags
+                each tag, index in tags ? tags : []
+                    .tag
+                        p= tag[index]
+            .links
+                if(CodeLink)
+                    .link
+                        | <a href="#{CodeLink}" target="_blank" rel="noopener noreferrer">Project GitHub</a>
+                if(LiveLink)
+                    .link 
+                        |  <a href="#{LiveLink}" target="_blank" rel="noopener noreferrer">See it in Action!</a>
 
 
 block content
