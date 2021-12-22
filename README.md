@@ -1,5 +1,5 @@
 # Portfolio Site
-A portfolio site I created. 
+A portfolio site I created. **[View It Live](https://harrisferguson.dev/)**
 
 # Building
 run `npm run start` to run the server, and connect at `localhost:3000`.
