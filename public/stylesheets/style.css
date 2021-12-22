@@ -208,12 +208,12 @@ About Me Page
 }
 
 .about {
-  font-size: 3vw;
+  font-size: large;
 }
 
 .about > .intro {
   width: 70%;
-  font-size: 3vw;
+  font-size: large;
   font-style: bold;
 }
 
@@ -223,7 +223,7 @@ About Me Page
 
 .about > .links {
   display: flex;
-  font-size: 4vw;
+  font-size: large;
 }
 
 .about > .links > a {
@@ -297,5 +297,28 @@ Mobile Formatting
     color: white;
     font-size: 3.8vh;
     padding: 20px;
+  }
+
+  .about {
+    font-size: 3vw;
+  }
+  
+  .about > .intro {
+    width: 70%;
+    font-size: 3vw;
+    font-style: bold;
+  }
+  
+  .about > .amble {
+    width: 70%;
+  }
+  
+  .about > .links {
+    display: flex;
+    font-size: 4vw;
+  }
+  
+  .about > .links > a {
+    margin: 10px;
   }
 }
