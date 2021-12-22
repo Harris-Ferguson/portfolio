@@ -9,8 +9,9 @@ mixin project(Name, Description, CodeLink, LiveLink, img, tags)
             each tag, index in tags ? tags : []
                 .tag
                     p= tag[index]
-        .link
-            | <a href="#{CodeLink}" target="_blank" rel="noopener noreferrer">Project GitHub</a>
+        if(CodeLink)
+            .link
+                | <a href="#{CodeLink}" target="_blank" rel="noopener noreferrer">Project GitHub</a>
         if(LiveLink)
             .link 
                 |  <a href="#{LiveLink}" target="_blank" rel="noopener noreferrer">See it in Action!</a>
