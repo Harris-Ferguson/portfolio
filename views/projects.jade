@@ -3,7 +3,11 @@ extends layout
 mixin project(Name, Description, CodeLink, LiveLink, img, tags)
     .project
         .image(style='background-image: url(#{img})')
-        h1= Name
+        if(LiveLink)
+            a(href="#{LiveLink}")
+                h1= Name
+        else
+            h1= Name
         p= Description
         .content 
             .tags

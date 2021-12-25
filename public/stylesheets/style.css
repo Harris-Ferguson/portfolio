@@ -262,6 +262,7 @@ Mobile Formatting
 
   .project > .content > .links > .link {
     height: 70px;
+    text-decoration: underline;
   }
 
   .project > .content > .links > .link > a {
