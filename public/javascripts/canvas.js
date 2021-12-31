@@ -11,13 +11,13 @@ let point_max = 800;
 let zoff = 0;
 let zincrement = 0.001;
 // how much we want to step each iteration. Roughly indicates line speed
-let step = 2.5;
+let step = 3.5;
 // Noise angle constant
 let angle = Math.PI;
 // base line values
 let base = 1000;
 let factor = 2;
-let strokeWidth = 50;
+let strokeWidth = 80;
 
 class Point {
   constructor(x, y){
