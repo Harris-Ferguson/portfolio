@@ -1,3 +1,1 @@
-I'm a Computer Science student studying at the University of Saskatchewan.
-
-I'm currently working at 7shifts as a Software Developer Intern. 
+I'm a Computer Science student and Software Developer Intern at <a href="https://www.7shifts.com/careers">7shifts</a>

@@ -52,6 +52,10 @@ ul {
   margin: 0;
 }
 
+.text > a {
+  color: white;
+}
+
 .text > p >  a {
   color: white;
 }
