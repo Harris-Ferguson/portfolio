@@ -234,6 +234,23 @@ About Me Page
   margin: 10px;
 }
 
+.toy {
+  display: flex;
+}
+
+.toy > .sliders {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.toy > .sliders > label {
+  color: white;
+}
+
+.toy > .sliders > button {
+  color: black;
+}
 
 /*
 Mobile Formatting

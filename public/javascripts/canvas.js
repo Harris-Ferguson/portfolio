@@ -35,11 +35,15 @@ class Point {
 function init(){
   window.addEventListener('resize', onWindowResize, false);
   onWindowResize();
+  resetCanvas();
+  window.requestAnimationFrame(draw);
+}
+
+function resetCanvas(){
   for(let i = 0 ; i < point_max ; i++){
     points[i] = randomize_point(new Point(0,0));
   }
   simplex = new SimplexNoise();
-  window.requestAnimationFrame(draw);
 }
 
 function onWindowResize(e){
