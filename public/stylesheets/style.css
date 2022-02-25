@@ -91,6 +91,7 @@ canvas {
 .info > .footer {
   position: fixed;
   bottom: 0;
+  margin-bottom: 10px;
 }
 
 .info > .footer > a {
@@ -354,5 +355,9 @@ Mobile Formatting
   
   .about > .links > a {
     margin: 10px;
+  }
+
+  .info > .footer > a {
+    font-size: x-large;
   }
 }

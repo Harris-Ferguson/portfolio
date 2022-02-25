@@ -17,7 +17,7 @@
   },
   {
     "name": "Portfolio Website", 
-    "description": "This very website!", 
+    "description": "This very website! Built in Vanilla JS and CSS on an Express server.", 
     "codelink": "https://github.com/Harris-Ferguson/portfolio", 
     "livelink": "/",
     "img": "/images/portfolio.png",
