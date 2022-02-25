@@ -1,0 +1,20 @@
+extends layout
+
+block config 
+  - var siteTitle = "Harris Ferguson - Slider Toy"
+
+block content
+  .toy 
+    .canvas
+      include noisecanvas 
+    .sliders 
+      label angle
+      input(id="angle", type="range")
+      label z increment
+      input(id="zinc", type="range")
+      label step 
+      input(id="step", type="range")
+      label stroke width
+      input(id="stroke", type="range")
+      button(id="reset") Reset to Defaults
+    script(src="/javascripts/canvas_controller.js") 
