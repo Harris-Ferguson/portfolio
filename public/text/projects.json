@@ -24,6 +24,14 @@
     "tags": ["JavaScript", "Jade", "NodeJS", "CSS"]
   },
   {
+    "name": "netlib", 
+    "description": "A small C networking library I built to make my life easier in my Computer Networks course.", 
+    "codelink": "https://github.com/Harris-Ferguson/netlib", 
+
+    "img": "/images/netlib.png",
+    "tags": ["C"]
+  },
+  {
     "name": "Battlesnake 2020", 
     "description": "A Snake playing AI built for Battlesnake Saskatchewan 2020. Built as a web server that implements the BattleSnake API. Our team placed 6th!", 
     "codelink": "https://github.com/Harris-Ferguson/zmija", 
