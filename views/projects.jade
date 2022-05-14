@@ -23,6 +23,9 @@ mixin project(Name, Description, CodeLink, LiveLink, img, tags)
                         |  <a href="#{LiveLink}" target="_blank" rel="noopener noreferrer">See it in Action!</a>
 
 
+block config
+    - var siteTitle = "Harris Ferguson - Projects"
+
 block content
     .projects
         each project in projects

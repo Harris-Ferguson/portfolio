@@ -52,6 +52,10 @@ ul {
   margin: 0;
 }
 
+.text > a {
+  color: white;
+}
+
 .text > p >  a {
   color: white;
 }
@@ -73,6 +77,7 @@ canvas {
   align-content: center;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -81,6 +86,17 @@ canvas {
 .info > .text {
   color: white;
   font-size: x-large;
+}
+
+.info > .footer {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+.info > .footer > a {
+  color: white;
+  font-size: large;
 }
 
 /*
@@ -230,6 +246,23 @@ About Me Page
   margin: 10px;
 }
 
+.toy {
+  display: flex;
+}
+
+.toy > .sliders {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.toy > .sliders > label {
+  color: white;
+}
+
+.toy > .sliders > button {
+  color: black;
+}
 
 /*
 Mobile Formatting
@@ -292,6 +325,7 @@ Mobile Formatting
     align-items: center;
     height: 100%;
     width: 100%;
+    text-align: center;
   }
   
   .info > .text {
@@ -321,5 +355,9 @@ Mobile Formatting
   
   .about > .links > a {
     margin: 10px;
+  }
+
+  .info > .footer > a {
+    font-size: x-large;
   }
 }

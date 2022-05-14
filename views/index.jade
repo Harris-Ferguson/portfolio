@@ -2,13 +2,17 @@ doctype html
 html
   head
     link(rel='stylesheet', href='/stylesheets/style.css')
+    title Harris Ferguson
   body
   include noisecanvas
     .info
       .text
         h1= title
-        p #{content}
+        p 
+        | I'm a Computer Science student and Software Developer Intern at <a href="https://www.7shifts.com">7shifts</a>
         p Take a look at my 
           a(href='/projects')= 'Projects 💻'
         p Learn more 
-          a(href='/about')= 'about me 📖'
+          a(href='/about')= 'About Me 📖'
+      .footer 
+        a(href='/canvastoy')= 'Play with the graphic!'

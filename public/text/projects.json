@@ -17,11 +17,19 @@
   },
   {
     "name": "Portfolio Website", 
-    "description": "This very website!", 
+    "description": "This very website! Built in Vanilla JS and CSS on an Express server.", 
     "codelink": "https://github.com/Harris-Ferguson/portfolio", 
     "livelink": "/",
     "img": "/images/portfolio.png",
     "tags": ["JavaScript", "Jade", "NodeJS", "CSS"]
+  },
+  {
+    "name": "netlib", 
+    "description": "A small C networking library I built to make my life easier in my Computer Networks course.", 
+    "codelink": "https://github.com/Harris-Ferguson/netlib", 
+
+    "img": "/images/netlib.png",
+    "tags": ["C"]
   },
   {
     "name": "Battlesnake 2020", 

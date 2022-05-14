@@ -1,3 +1,4 @@
+const { resolveNaptr } = require('dns');
 var express = require('express');
 var router = express.Router();
 var fs = require('fs');
@@ -31,5 +32,9 @@ router.get('/canvas', function(req, res, next) {
 router.get('/cargame', function(req, res, next) {
   res.sendFile('/cargame/index.html');
 })
+
+router.get('/canvastoy', function(req, res, next){
+  res.render('canvas_toy');
+});
 
 module.exports = router;
