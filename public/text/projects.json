@@ -9,7 +9,7 @@
   },
   {
     "name": "Road Coffee", 
-    "description": "The Shopify based website for Road Coffee. Worked on styling, SEO, Performance Optimization, and a custom video loader for the blog.", 
+    "description": "The Shopify based website for Road Coffee. Worked on styling, SEO, Performance Optimization, and a video loader for the blog.", 
 
     "livelink": "https://roadcoffeeco.com/",
     "img": "/images/roadcoffee.png",
@@ -25,7 +25,7 @@
   },
   {
     "name": "netlib", 
-    "description": "A small C networking library I built to make my life easier in my Computer Networks course.", 
+    "description": "A small C networking library I built for the assignments in CMPT 434 Computer Networks at the U of S", 
     "codelink": "https://github.com/Harris-Ferguson/netlib", 
 
     "img": "/images/netlib.png",

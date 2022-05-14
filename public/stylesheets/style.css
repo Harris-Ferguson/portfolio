@@ -239,11 +239,17 @@ About Me Page
 
 .about > .links {
   display: flex;
+  align-items: center;
   font-size: large;
 }
 
 .about > .links > a {
-  margin: 10px;
+  margin: 16px;
+}
+
+.about > .links > a > img {
+  width: 128px;
+  height: auto;
 }
 
 .toy {
@@ -350,11 +356,21 @@ Mobile Formatting
   
   .about > .links {
     display: flex;
+    align-items: center;
     font-size: 4vw;
   }
   
   .about > .links > a {
-    margin: 10px;
+    margin: 16px;
+  }
+  
+  .about > .links > a > img {
+    width: 64px;
+    height: auto;
+  }
+
+  .info > .footer > a {
+    font-size: x-large;
   }
 
   .info > .footer > a {
