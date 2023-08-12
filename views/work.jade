@@ -1,0 +1,19 @@
+extends layout 
+
+mixin job(Company, Link, Title, Bulletpoints)
+  .job 
+    a(href="#{Link}")
+      h1= Company 
+    h2= Title 
+    ul 
+      each point in Bulletpoints 
+        li= point
+        
+
+block config
+    - var siteTitle = "Harris Ferguson - Work Experience"
+
+block content
+    .jobs
+        each job in jobs
+            +job(job.company, job.link, job.title, job.bulletpoints)
