@@ -1,8 +1,9 @@
 # Portfolio Site
-A portfolio site I created. **[View It Live](https://harrisferguson.dev/)**
+My personal website! 
+**[View It Live](https://harrisferguson.dev/)**
 
-# Building
-run `npm run start` to run the server, and connect at `localhost:3000`.
+# Building Locally
+run `npm run start` to run the server, then navigate to `localhost:3000`.
 
 # The Graphic
 On the landing page background there is a graphic which looks like a bunch of colors bleeding 
