@@ -199,6 +199,22 @@ project page
   justify-content: center;
 }
 
+/* 
+Work Experience Page
+*/
+
+.job {
+  margin: 30px;
+}
+
+ul {
+  list-style: circle;
+}
+
+li {
+  margin-top: 10px;
+}
+
 
 /*
 About Me Page
