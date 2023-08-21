@@ -1,5 +1,11 @@
 [
   {
+    "name": "Swish", 
+    "description": "A CLI process management tool built in Go while at 7shifts. Looking for contributors, and soon to be open sourced.", 
+    "img": "/images/swish.png",
+    "tags": ["Go"]
+  },
+  {
     "name": "SaskCycle", 
     "description": "A Kijiji style recycling and reuse app, including a route planner to pick up and drop off items. Built for CMPT370 in an agile team of 5.", 
     "codelink": "https://github.com/Harris-Ferguson/saskcycle",

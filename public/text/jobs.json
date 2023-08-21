@@ -1,0 +1,12 @@
+[
+  {
+    "company": "7shifts", 
+    "link": "www.7shifts.com", 
+    "title": "Developer Intern, Billing and Growth", 
+    "bulletpoints": [
+      "Worked on a squad that built and maintained a billing system that managed reccurring charges, feature entitlement, and self serve customer activation and conversion", 
+      "Built and Ran AB tests in collaboration with product stakeholders in order to determine growth oppertunities for the business", 
+      "Created infrastructure to run large scale customer data changes to facilitate Growth initiatives such as price increases and elasticity testing"
+    ]
+  }
+]
