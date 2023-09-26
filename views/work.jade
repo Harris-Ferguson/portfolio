@@ -1,10 +1,11 @@
 extends layout 
 
-mixin job(Company, Link, Title, Bulletpoints)
+mixin job(Company, Link, Title, Tenure, Bulletpoints)
   .job 
     a(href="#{Link}")
       h1= Company 
     h2= Title 
+    h3= Tenure
     ul 
       each point in Bulletpoints 
         li= point
@@ -16,4 +17,4 @@ block config
 block content
     .jobs
         each job in jobs
-            +job(job.company, job.link, job.title, job.bulletpoints)
+            +job(job.company, job.link, job.title, job.tenure, job.bulletpoints)
