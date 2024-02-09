@@ -1,5 +1,15 @@
 [
   {
+    "company": "Prompty", 
+    "link": "https://www.prompty.ca/", 
+    "title": "Interim Full Stack Developer", 
+    "tenure": "Feb 2024 - March 2024",
+    "bulletpoints": [
+      "Implemented a Re-skin of the prompty web application", 
+      "Designed and Implemented a Data Fetching system for the Front-End of the application to unify how state is managed on the FE"
+    ]
+  },
+  {
     "company": "7shifts", 
     "link": "www.7shifts.com", 
     "title": "Developer Intern, Billing and Growth", 

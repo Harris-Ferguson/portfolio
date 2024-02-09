@@ -9,7 +9,7 @@
     "name": "SaskCycle", 
     "description": "A Kijiji style recycling and reuse app, including a route planner to pick up and drop off items. Built for CMPT370 in an agile team of 5.", 
     "codelink": "https://github.com/Harris-Ferguson/saskcycle",
-    "livelink": "https://saskcycle.herokuapp.com/",
+    
     "img": "/images/saskcycle.png",
     "tags": ["Java Spring", "JavaScript", "MongoDB"]
   },
