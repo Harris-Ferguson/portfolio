@@ -1,5 +1,12 @@
 [
   {
+    "name": "THE LAMP", 
+    "description": "An exhibit for the Pixel.Palettes art show. A shared digital lava lamp where visitors can add their own orb into the lamp.", 
+    "livelink": "http://lamp.arrangednon.space/",
+    "img": "/images/orbs.png",
+    "tags": ["three.js"]
+  },
+  {
     "name": "Swish", 
     "description": "A CLI process management tool built in Go while at 7shifts. Looking for contributors, and soon to be open sourced.", 
     "img": "/images/swish.png",
