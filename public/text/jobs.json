@@ -2,11 +2,12 @@
   {
     "company": "Prompty", 
     "link": "https://www.prompty.ca/", 
-    "title": "Interim Full Stack Developer", 
-    "tenure": "Feb 2024 - March 2024",
+    "title": "Full Stack Developer", 
+    "tenure": "Feb 2024 - Present",
     "bulletpoints": [
-      "Implemented a Re-skin of the prompty web application", 
-      "Designed and Implemented a Data Fetching system for the Front-End of the application to unify how state is managed on the FE"
+      "Implemented a full front end Re-skin of the Prompty web application", 
+      "Designed and Implemented a Data Fetching system for the Front-End of the application to unify how state is managed on the FE", 
+      "Launched an event and attendee tracking system to be used with the physical Prompty business card product line"
     ]
   },
   {
