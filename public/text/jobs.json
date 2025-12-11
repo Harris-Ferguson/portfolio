@@ -1,11 +1,21 @@
 [
   {
+    "company": "Coconut Software", 
+    "link": "https://www.coconutsoftware.com/", 
+    "title": "Intermediate Developer", 
+    "tenure": "May 2025 - Present",
+    "bulletpoints": [
+      "Launched an Analytics Homepage product to guide users into starting their Analytics Journey, leading to a 60% increase in MAU", 
+      "Implemented a Hot Module Reload system for Javascript/Typescript local development builds, leading to 30 seconds of saved time per code change for all developers"
+    ]
+  },
+  {
     "company": "Prompty", 
     "link": "https://www.prompty.ca/", 
     "title": "Full Stack Developer", 
-    "tenure": "Feb 2024 - Present",
+    "tenure": "Feb 2024 - Mar 2025",
     "bulletpoints": [
-      "Implemented a full front end Re-skin of the Prompty web application to support our transition from Beta to Launch", 
+      "Built an Analytics Product in the Prompty App to surface event performance insights for event hosts", 
       "Designed and Implemented our CI/CD pipeline with a preview build system in order to assess code and design before it hits production", 
       "Launched an event and attendee tracking system to be used with the physical Prompty business card product line"
     ]
