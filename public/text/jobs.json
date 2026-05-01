@@ -5,6 +5,7 @@
     "title": "Intermediate Developer", 
     "tenure": "May 2025 - Present",
     "bulletpoints": [
+      "Built internal tooling to track converstion to Typescript, and captured over 2000 filed needing conversion into specific actionable jira cards",
       "Launched an Analytics Homepage product to guide users into starting their Analytics Journey, leading to a 60% increase in MAU", 
       "Implemented a Hot Module Reload system for Javascript/Typescript local development builds, leading to 30 seconds of saved time per code change for all developers"
     ]
