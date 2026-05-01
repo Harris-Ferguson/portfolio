@@ -1,5 +1,12 @@
 [
   {
+    "name": "Legisbrief", 
+    "description": "Understand what's happening in the Canadian Government with Legisbrief, a web app that provides concise AI generated summaries of parliamentary bills.", 
+    "livelink": "https://legisbrief.ca/",
+    "img": "/images/legisbrief.png",
+    "tags": ["svelte", "python", "openai"]
+  },
+  {
     "name": "THE LAMP", 
     "description": "An exhibit for the Pixel.Palettes art show. A shared digital lava lamp where visitors can add their own orb into the lamp.", 
     "livelink": "http://lamp.arrangednon.space/",
