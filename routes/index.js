@@ -21,7 +21,7 @@ router.get('/about', function(req, res, next) {
       console.log(err);
       return;
     }
-    res.render('about', {about: data, img: '/images/headshot.jpg'});
+    res.render('about', {about: data, img: '/images/headshot.webp'});
   });
 });
 
