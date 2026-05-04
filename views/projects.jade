@@ -11,16 +11,16 @@ mixin project(Name, Description, CodeLink, LiveLink, img, tags)
         p= Description
         .content 
             .tags
-                each tag, index in tags ? tags : []
-                    .tag
-                        p= tag[index]
+                if tags
+                    each tag in tags
+                        .tag= tag
             .links
                 if(CodeLink)
                     .link
-                        | <a href="#{CodeLink}" target="_blank" rel="noopener noreferrer">Project GitHub</a>
+                        | <a href="#{CodeLink}" target="_blank" rel="noopener noreferrer">github ↗</a>
                 if(LiveLink)
-                    .link 
-                        |  <a href="#{LiveLink}" target="_blank" rel="noopener noreferrer">See it in Action!</a>
+                    .link
+                        | <a href="#{LiveLink}" target="_blank" rel="noopener noreferrer">live ↗</a>
 
 
 block config

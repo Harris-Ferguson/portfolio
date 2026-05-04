@@ -131,30 +131,42 @@ project page
 .project > .content > .links {
   bottom: 0;
   width: 100%;
+  display: flex;
+  gap: 6px;
+  padding: 4px 10px 10px;
+  box-sizing: border-box;
 }
 
 .project > .content > .links > .link {
-  margin: 2px;
-  border-width: 2px;
-  border: black solid;
-  border-radius: 20px;
-  background-color: black;
+  flex: 1;
+  border: 1px solid #222;
+  border-radius: 3px;
+  background: transparent;
+  transition: background 0.15s, border-color 0.15s;
 }
 
-.project > .content> .links > .link:hover {
-  background-color: darkgray;
-  border: darkgray solid;
+.project > .content > .links > .link:hover {
+  background-color: #222;
+  border-color: #222;
 }
 
 .project > .content > .links > .link > a {
   text-decoration: none;
-  color: white;
-  font-size: large;
+  color: #222;
+  font-size: 13px;
+  letter-spacing: 0.04em;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 8px 4px;
+  box-sizing: border-box;
+  transition: color 0.15s;
+}
+
+.project > .content > .links > .link:hover > a {
+  color: white;
 }
 
 .project > .image {
@@ -171,32 +183,22 @@ project page
   min-height: 100%;
 }
 
-.project > .content > .tags{
+.project > .content > .tags {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 6px 12px 8px;
 }
 
 .project > .content > .tags > .tag {
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: gray;
-  border-radius: 10px;
-  height: 50px;
-  width: 80px;
-  font-size: small;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-
-.project > .content > .tags > .tag > p {
-  margin: 3px;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+  padding: 3px 8px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: #555;
 }
 
 /* 
@@ -311,8 +313,6 @@ Mobile Formatting
 
   .project > .content > .tags > .tag {
     font-size: 1.3vh;
-    height: 100%;
-    width: 100%;
   }
 
   .project > .content > .links > .link {
