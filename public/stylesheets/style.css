@@ -109,17 +109,45 @@ project page
   flex-wrap: wrap;
 }
 
-.project{
+.project {
   margin: 10px;
-  border-width: 1px;
-  border: darkgray;
-  border-radius: 20px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
   overflow: hidden;
-  box-shadow: 0 0 5em -1em darkgray;
   text-align: center;
   width: 25em;
   height: 32em;
   position: relative;
+  transition: border-color 0.15s;
+}
+
+.project:hover {
+  border-color: #999;
+}
+
+.project > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project > h1,
+.project > a > h1 {
+  font-size: 1.2em;
+  margin: 0.6em 0.5em 0.3em;
+  letter-spacing: 0.02em;
+  color: #111;
+}
+
+.project > a:hover > h1 {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.project > p {
+  margin: 0 1em 0.5em;
+  font-size: 0.82em;
+  color: #333;
+  line-height: 1.55;
 }
 
 .content {
@@ -170,10 +198,11 @@ project page
 }
 
 .project > .image {
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  border-width: 2px;
-  height: 200px;
+  background-position: center;
+  border-bottom: 1px solid #bbb;
+  height: 185px;
   width: 100%;
 }
 
@@ -194,11 +223,11 @@ project page
 
 .project > .content > .tags > .tag {
   padding: 3px 8px;
-  border: 1px solid #bbb;
+  border: 1px solid #666;
   border-radius: 2px;
   font-size: 11px;
   letter-spacing: 0.05em;
-  color: #555;
+  color: #222;
 }
 
 /* 
