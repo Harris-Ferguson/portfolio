@@ -1,34 +1,37 @@
 [
   {
-    "company": "Coconut Software", 
-    "link": "https://www.coconutsoftware.com/", 
-    "title": "Intermediate Developer", 
-    "tenure": "May 2025 - Present",
+    "company": "Coconut Software",
+    "link": "https://www.coconutsoftware.com/",
+    "title": "Intermediate Developer",
+    "startDate": "2025-05",
+    "endDate": null,
     "bulletpoints": [
       "Built internal tooling to track converstion to Typescript, and captured over 2000 filed needing conversion into specific actionable jira cards",
-      "Launched an Analytics Homepage product to guide users into starting their Analytics Journey, leading to a 60% increase in MAU", 
+      "Launched an Analytics Homepage product to guide users into starting their Analytics Journey, leading to a 60% increase in MAU",
       "Implemented a Hot Module Reload system for Javascript/Typescript local development builds, leading to 30 seconds of saved time per code change for all developers"
     ]
   },
   {
-    "company": "Prompty", 
-    "link": "https://www.prompty.ca/", 
-    "title": "Full Stack Developer", 
-    "tenure": "Feb 2024 - Mar 2025",
+    "company": "Prompty",
+    "link": "https://www.prompty.ca/",
+    "title": "Full Stack Developer",
+    "startDate": "2024-02",
+    "endDate": "2025-03",
     "bulletpoints": [
-      "Built an Analytics Product in the Prompty App to surface event performance insights for event hosts", 
-      "Designed and Implemented our CI/CD pipeline with a preview build system in order to assess code and design before it hits production", 
+      "Built an Analytics Product in the Prompty App to surface event performance insights for event hosts",
+      "Designed and Implemented our CI/CD pipeline with a preview build system in order to assess code and design before it hits production",
       "Launched an event and attendee tracking system to be used with the physical Prompty business card product line"
     ]
   },
   {
-    "company": "7shifts", 
-    "link": "www.7shifts.com", 
-    "title": "Developer Intern, Billing and Growth", 
-    "tenure": "May 2022 - Sept 2023",
+    "company": "7shifts",
+    "link": "https://www.7shifts.com",
+    "title": "Developer Intern, Billing and Growth",
+    "startDate": "2022-05",
+    "endDate": "2023-09",
     "bulletpoints": [
-      "Worked on a squad that built and maintained a billing system that managed recurring charges, feature entitlement, and self serve customer activation and conversion", 
-      "Developed AB tests and created analytics to evaluate new potential initiatives to drive engagement and activation ", 
+      "Worked on a squad that built and maintained a billing system that managed recurring charges, feature entitlement, and self serve customer activation and conversion",
+      "Developed AB tests and created analytics to evaluate new potential initiatives to drive engagement and activation",
       "Spearheaded the creation of infrastructure to run large scale data migrations with the goal of updating pricing for older customers, leading to a large boost in ARR"
     ]
   }

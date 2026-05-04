@@ -1,15 +1,23 @@
 extends layout 
 
-mixin job(Company, Link, Title, Tenure, Bulletpoints)
-  .job 
-    a(href="#{Link}")
-      h1= Company 
-    h2= Title 
-    h3= Tenure
-    ul 
-      each point in Bulletpoints 
+mixin job(Company, Link, Title, startDate, endDate, Bulletpoints)
+  - var monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+  - function parseYM(s) { var p = s.split('-'); return { year: +p[0], month: +p[1] - 1 }; }
+  - var start = parseYM(startDate)
+  - var endObj = endDate ? parseYM(endDate) : { year: new Date().getFullYear(), month: new Date().getMonth() }
+  - var totalMonths = (endObj.year - start.year) * 12 + (endObj.month - start.month)
+  - var yrs = Math.floor(totalMonths / 12)
+  - var mos = totalMonths % 12
+  - var duration = (yrs > 0 ? yrs + ' yr' : '') + (yrs > 0 && mos > 0 ? ' ' : '') + (mos > 0 ? mos + ' mo' : '')
+  - var tenureStr = monthNames[start.month] + ' ' + start.year + ' – ' + (endDate ? monthNames[endObj.month] + ' ' + endObj.year : 'Present')
+  .job
+    a.job-company(href="#{Link}")
+      h2= Company
+    p.job-meta= Title + ' · ' + tenureStr + ' (' + duration + ')'
+    ul
+      each point in Bulletpoints
         li= point
-        
+
 
 block config
     - var siteTitle = "Harris Ferguson - Work Experience"
@@ -17,4 +25,4 @@ block config
 block content
     .jobs
         each job in jobs
-            +job(job.company, job.link, job.title, job.tenure, job.bulletpoints)
+            +job(job.company, job.link, job.title, job.startDate, job.endDate, job.bulletpoints)

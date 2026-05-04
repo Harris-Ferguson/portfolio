@@ -230,12 +230,66 @@ project page
   color: #222;
 }
 
-/* 
+/*
 Work Experience Page
 */
 
+.jobs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
 .job {
-  margin: 30px;
+  width: 100%;
+  max-width: 52em;
+  margin: 8px 0;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.job:hover {
+  border-color: #999;
+}
+
+.job-company {
+  display: block;
+  padding: 14px 20px 4px;
+}
+
+.job-company > h2 {
+  margin: 0;
+  font-size: 1.1em;
+  letter-spacing: 0.02em;
+  font-weight: normal;
+}
+
+.job-meta {
+  margin: 0;
+  padding: 2px 20px 12px;
+  font-size: 0.8em;
+  color: #555;
+  border-bottom: 1px solid #bbb;
+}
+
+.job > ul {
+  margin: 0;
+  padding: 12px 20px 16px 36px;
+  list-style: circle;
+}
+
+.job > ul > li {
+  font-size: 0.85em;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+.job > ul > li:first-child {
+  margin-top: 0;
 }
 
 ul {
